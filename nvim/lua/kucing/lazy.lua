@@ -26,6 +26,7 @@ require("lazy").setup({
     })
   end,
   'Enonya/yuyuko.vim',
+  'ggandor/leap.nvim',
   'equalsraf/neovim-gui-shim',
   'williamboman/mason.nvim',
   'williamboman/mason-lspconfig.nvim',
@@ -50,3 +51,5 @@ require("mason-lspconfig").setup_handlers {
     require("lspconfig")[server_name].setup({})
   end,
 }
+
+require('leap').create_default_mappings()
